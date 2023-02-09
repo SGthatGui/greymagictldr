@@ -6,8 +6,8 @@ export default function Home() {
     <main className={styles.homepage}>
       <h1>{`{TL;DR}`}</h1>
       <h2 className='mb-4'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vero totam error nostrum, quasi exercitationem minima
-        quod voluptatibus eveniet cumque dolores consequatur quas atque assumenda vel perspiciatis? Inventore, nulla quo.
+        Too Long; Didn't Read. a quick overview or summary of the main points, so that people can understand the gist of the text
+        without having to read the entire thing.
       </h2>
       <Link
         href={'/news'}
