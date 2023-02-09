@@ -8,14 +8,14 @@ export default function Search() {
 
   const list = async () => {
     const asd = await getsinglearticle('apple')
-    const zxc = await setData('asd')
+    const zxc = await setData(asd)
   }
 
   return (
     <main>
       <p>placeholder for the input</p>
       <button onClick={list}>yolo</button>
-      {data ? <p>data</p> : ''}
+      {data ? <p>{data}</p> : ''}
     </main>
   )
 }
