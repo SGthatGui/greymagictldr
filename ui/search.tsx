@@ -8,7 +8,7 @@ export default function Search() {
 
   const list = async () => {
     const asd = await getsinglearticle('apple')
-    await setData(asd)
+    const zxc = await setData('asd')
   }
 
   return (
