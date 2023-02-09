@@ -11,6 +11,5 @@ export const newsorgsearchcall = async () => {
     }
   );
 
-  console.log(await res.json());
-  return res;
+  return res.json();
 };
