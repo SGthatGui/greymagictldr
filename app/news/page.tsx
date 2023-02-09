@@ -4,13 +4,13 @@ import { newsorgsearchcall } from "@/lib/newsapiorg";
 import { useState } from "react";
 import styles from "./page.module.css";
 
-const Page = async () => {
+const Page = () => {
   const [data, setData] = useState([]);
 
   const getData = async () => {
     const data = await newsorgsearchcall();
-    setData(data.articles);
-    console.log(data.articles);
+    setData(data?.articles);
+    // console.log(data.articles);
   };
   const sample = {
     status: "ok",
