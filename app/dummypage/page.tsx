@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { newsorgsearchcall } from '../../lib/newsapiorg'
+import { newsorgsearchcall, singlearticlescrap } from '../../lib/newsapiorg'
 
 export default function Search() {
   const [data, setData] = React.useState([])
@@ -10,6 +10,7 @@ export default function Search() {
     const data = await newsorgsearchcall()
     setData(data.articles)
     console.log(data.articles)
+    await singlearticlescrap()
   }
 
   return (

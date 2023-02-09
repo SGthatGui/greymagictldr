@@ -1,5 +1,4 @@
-const jsdom = require('jsdom')
-const { JSDOM } = jsdom
+// const { JSDOM } = require('jsdom')
 
 export const newsorgsearchcall = async () => {
   // const searchlist = await fetch(
@@ -17,13 +16,13 @@ export const newsorgsearchcall = async () => {
   return res.json()
 }
 
-/* export const singlearticlescrap = async () => {
+export const singlearticlescrap = async () => {
   const res = await fetch(
-    'https://www.wired.com/story/apple-tests-touchscreen-macbooks/'
+    'https://www.engadget.com/apple-tv-and-apple-music-apps-quietly-appear-on-the-microsoft-store-123547865.html'
   ).catch((err) => console.log(err))
   const html = await res?.text()
-  const dom = new JSDOM(html)
+  /* const dom = new JSDOM(html)
   const document = dom.window.document
-  const dataselect = document.queryselector('<p>')?.textcontext
-  console.log(dataselect)
-} */
+  const dataselect = document.queryselector('<p>')?.textcontext */
+  console.log(res)
+}
