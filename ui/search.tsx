@@ -15,7 +15,9 @@ export default function Search() {
   return (
     <main>
       <p>placeholder for the input</p>
-      <button onClick={list}>yolo</button>
+      <button className='btn btn-primary' onClick={list}>
+        yolo
+      </button>
       {data ? (
         <>
           <div>
