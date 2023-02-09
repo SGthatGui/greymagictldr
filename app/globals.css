@@ -3,22 +3,48 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
-  background-color: #f8e1fd;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   font-family: 'Crimson Text', serif;
+
+  --color-1: #7f4dd9;
+  --color-2: #3ac151;
+  --color-3: #df30a1;
+}
+
+nav {
+  background-color: rgb(33, 33, 33);
+  text-align: center;
+}
+
+nav h1 {
+  padding: 20px;
+  font-size: 28px;
+}
+
+nav a:hover {
+  text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: azure;
+  font-family: 'Crimson Text', serif;
 }
 
+a {
+  color: azure;
+}
 
+a:hover {
+  color: azure;
+  text-decoration: underline;
+}
 
 h1,
 h2,
@@ -26,7 +52,7 @@ h3,
 h4,
 h5 {
   font-weight: 700;
-  font-family: 'Crimson Text', serif;
+
 }
 
 h1 {
@@ -41,5 +67,15 @@ h2 {
 .btn.btn-primary {
   background-color: rgb(77, 217, 131);
   border-color: rgb(77, 217, 131);
-  color: black;
+  color: rgb(33, 33, 33);
+  ;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

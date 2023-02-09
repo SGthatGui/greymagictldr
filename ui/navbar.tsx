@@ -4,9 +4,10 @@ const Navbar = () => {
   return (
     <div>
       <nav>
-        <Link href='/'>Home</Link>
+        <Link href='/'>
+          <h1>{`{TS;IR}`}</h1>
+        </Link>
         <br />
-        <Link href='news'>News</Link>
       </nav>
     </div>
   );

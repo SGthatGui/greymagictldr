@@ -5,8 +5,53 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
-  background-color: rgb(33, 33, 33);
-  color: azure;
   text-align: center;
   max-width: 100%;
+  background-color: rgb(33, 33, 33);
+}
+
+.cardcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.newspagecard {
+  flex-grow: 1;
+  width: 30%;
+}
+
+.imgcard {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  height: 210px;
+  background-size: 160%;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.newspage h3 {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.newspage h3 a {
+  text-align: left;
+}
+
+.newspagecard:nth-child(1n) h3 a {
+  background: var(--color-1);
+}
+
+.newspagecard:nth-child(2n) h3 a {
+  background: var(--color-2);
+}
+
+.newspagecard:nth-child(3n) h3 a {
+  background: var(--color-3);
+}
+
+
+.newspage p {
+  text-align: left;
 }
