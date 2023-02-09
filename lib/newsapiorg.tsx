@@ -17,7 +17,7 @@ export const newsorgsearchcall = async () => {
   return res.json()
 }
 
-export const singlearticlescrap = async () => {
+/* export const singlearticlescrap = async () => {
   const res = await fetch(
     'https://www.wired.com/story/apple-tests-touchscreen-macbooks/'
   ).catch((err) => console.log(err))
@@ -26,4 +26,4 @@ export const singlearticlescrap = async () => {
   const document = dom.window.document
   const dataselect = document.queryselector('<p>')?.textcontext
   console.log(dataselect)
-}
+} */
