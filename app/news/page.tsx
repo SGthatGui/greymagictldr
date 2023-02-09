@@ -1,3 +1,4 @@
+import Newslist from '@/ui/newslist'
 import Search from '@/ui/search'
 
 const page = async () => {

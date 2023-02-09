@@ -16,6 +16,6 @@ export const getsinglearticle = async (id: string) => {
     'https://newsapi.org/docs/guides/how-to-get-the-full-content-for-a-news-article'
   ).catch((err) => console.log(err))
 
-  console.log(seconditem)
+  console.log(ting)
   return ting
 }

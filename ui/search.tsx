@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { getsinglearticle } from '../lib/scrape'
+import Newslist from './newslist'
 
 export default function Search() {
   const [data, setData] = React.useState('')
@@ -15,7 +16,18 @@ export default function Search() {
     <main>
       <p>placeholder for the input</p>
       <button onClick={list}>yolo</button>
-      {data ? <p>{data}</p> : ''}
+      {data ? (
+        <>
+          <div>
+            <p>{data}</p>
+          </div>
+          <div>
+            <Newslist />
+          </div>
+        </>
+      ) : (
+        ''
+      )}
     </main>
   )
 }
