@@ -1,25 +1,20 @@
-import Navbar from '@/ui/navbar'
-import 'bootstrap/dist/css/bootstrap.css'
-import './globals.css'
+import Navbar from '@/ui/navbar';
+import Head from 'next/head';
+import 'bootstrap/dist/css/bootstrap.css';
+import './globals.css';
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
+      {/* <head />
+      
+      <head /> */}
       <body>
-        <header>
+        {/* <header>
           <Navbar />
-        </header>
+        </header> */}
         <main>{children}</main>
       </body>
     </html>
-  )
+  );
 }

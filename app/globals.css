@@ -9,10 +9,37 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  font-family: 'Crimson Text', serif;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+  font-family: 'Crimson Text', serif;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+.btn.btn-primary {
+  background-color: rgb(77, 217, 131);
+  border-color: rgb(77, 217, 131);
+  color: black;
 }
