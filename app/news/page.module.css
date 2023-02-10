@@ -39,18 +39,17 @@
   text-align: left;
 }
 
-.newspagecard:nth-child(1n) h3 a {
+.newspagecard:nth-child(1n) h3 {
   background: var(--color-1);
 }
 
-.newspagecard:nth-child(2n) h3 a {
+.newspagecard:nth-child(2n) h3 {
   background: var(--color-2);
 }
 
-.newspagecard:nth-child(3n) h3 a {
+.newspagecard:nth-child(3n) h3 {
   background: var(--color-3);
 }
-
 
 .newspage p {
   text-align: left;

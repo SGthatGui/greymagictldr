@@ -45,15 +45,23 @@ const Page = () => {
       <div className="d-flex">
         {data &&
           data.map((article: any) => (
-            <div className={styles.newspagecard} key={article.url}>
+            <div className={`${styles.newspagecard} p-2`} key={article.url}>
+              <div className="w-100 d-flex p-2 bd-highlight justify-content-between">
+                <button className="btn btn-secondary">
+                  <a href={article.url}>read condensed</a>
+                </button>
+                <button className="btn btn-secondary">read full</button>
+              </div>
               <div
                 className={`${styles.imgcard}`}
                 style={{
-                  backgroundImage: `url(${article.urlToImage})`,
+                  backgroundImage: `url(${
+                    article.urlToImage ||
+                    "https://t4.ftcdn.net/jpg/01/95/73/03/240_F_195730369_Fi6XI2ORrPgnxtZ000SqW5lY6wlNXW5d.jpg"
+                  })`,
                 }}
               ></div>
               <h3 className="mb-3">
-                {/* <a href={article.url}>{article.title}</a> */}
                 {article.title}
               </h3>
               <p>{article.description}</p>
