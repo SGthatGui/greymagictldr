@@ -46,11 +46,11 @@ const Page = () => {
         {data &&
           data.map((article: any) => (
             <div className={`${styles.newspagecard} p-2`} key={article.url}>
-              <div className="w-100 d-flex p-2 bd-highlight justify-content-between">
-                <button className="btn btn-secondary">
-                  <a href={article.url}>read condensed</a>
+              <div className="w-100 d-flex bd-highlight justify-content-between">
+                <button className="w-50 m-1 btn btn-secondary">
+                  <a href={article.url}>read full</a>
                 </button>
-                <button className="btn btn-secondary">read full</button>
+                <button className=" w-50 m-1 btn btn-secondary">read condensed</button>
               </div>
               <div
                 className={`${styles.imgcard}`}
@@ -61,9 +61,7 @@ const Page = () => {
                   })`,
                 }}
               ></div>
-              <h3 className="mb-3">
-                {article.title}
-              </h3>
+              <h3 className="mb-3">{article.title}</h3>
               <p>{article.description}</p>
             </div>
           ))}
