@@ -15,6 +15,11 @@ const Page = () => {
     // console.log(data.articles);
   };
 
+  const condense = (dataToCondense: string) => {
+    console.log(dataToCondense);
+    alert(dataToCondense);
+  };
+
   return (
     <div className={styles.newspage}>
       <div className="input-group mb-3">
@@ -44,27 +49,32 @@ const Page = () => {
       </div>
       <div className="d-flex">
         {data &&
-          data.map((article: any) => (
-            <div className={`${styles.newspagecard} p-2`} key={article.url}>
-              <div className="w-100 d-flex bd-highlight justify-content-between">
-                <button className="w-50 m-1 btn btn-secondary">
-                  <a href={article.url}>read full</a>
-                </button>
-                <button className=" w-50 m-1 btn btn-secondary">read condensed</button>
+          data.map((article: any) => {
+            const dataToCondense = [article.title, article.description];
+            return (
+              <div className={`${styles.newspagecard} p-2`} key={article.url}>
+                <div className="w-100 d-flex bd-highlight justify-content-between">
+                  <button className="w-50 m-1 btn btn-secondary">
+                    <a href={article.url}>read full</a>
+                  </button>
+                  <button className=" w-50 m-1 btn btn-secondary" onClick={() => condense(dataToCondense.toString())}>
+                    read condensed
+                  </button>
+                </div>
+                <div
+                  className={`${styles.imgcard}`}
+                  style={{
+                    backgroundImage: `url(${
+                      article.urlToImage ||
+                      "https://t4.ftcdn.net/jpg/01/95/73/03/240_F_195730369_Fi6XI2ORrPgnxtZ000SqW5lY6wlNXW5d.jpg"
+                    })`,
+                  }}
+                ></div>
+                <h3 className="mb-3">{article.title}</h3>
+                <p>{article.description}</p>
               </div>
-              <div
-                className={`${styles.imgcard}`}
-                style={{
-                  backgroundImage: `url(${
-                    article.urlToImage ||
-                    "https://t4.ftcdn.net/jpg/01/95/73/03/240_F_195730369_Fi6XI2ORrPgnxtZ000SqW5lY6wlNXW5d.jpg"
-                  })`,
-                }}
-              ></div>
-              <h3 className="mb-3">{article.title}</h3>
-              <p>{article.description}</p>
-            </div>
-          ))}
+            );
+          })}
       </div>
     </div>
   );
